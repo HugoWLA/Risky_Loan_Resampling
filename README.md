@@ -48,3 +48,11 @@ Being that our focus here is on high risk loans (class 1) we see that by using '
 the resampled model is the way to go and is why I recommend going with the resampled model for its superior accuracy.
 
 
+## Installations
+
+```bash
+conda install -c conda-forge imbalanced-learn
+```
+```bash
+conda install -c conda-forge pydotplus
+```
