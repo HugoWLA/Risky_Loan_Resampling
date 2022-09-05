@@ -32,17 +32,19 @@ to a class. The model then assigns the sample to that class.
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
+  * Model 1 Accuracy 95% , Precision 85% , and Recall score 91%.
+![original](images/original.png)
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * Model 2 Accuracy 99% , Precision 84% , and Recall score 99%.
+![resampled](images/resampled.png)
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+Being that our focus here is on high risk loans (class 1) we see that by using 'RandomOverSampler' to create balance between 'Healthy' and 
+'high risk' loans we can more accuratly predict future outcomes by using 'LogisticRegression'. As you can see our original model was solid at 
+95% accuracy and a recall of 91%. When compared to a balanced resampled model at 99% accuracy and 99% recall we can clearly see that in this instance 
+the resampled model is the way to go and is why I recommend going with the resampled model for its superior accuracy.
 
-If you do not recommend any of the models, please justify your reasoning.
+
